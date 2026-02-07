@@ -10,34 +10,10 @@ pip install -r requirements.txt
 
 **Requirements:** Python 3.8+, PyTorch 2.0+, CUDA-capable GPU recommended.
 
-Remember to use ```bash
-
-pip install --force-reinstall torch torchvision --index-url https://download.pytorch.org/whl/cu126 
-```
-
-to actually install gpu version of torch
-
-## Project Structure
-
-```
-├── config/
-│   ├── baseline_config.yaml       # Baseline DCGAN hyperparameters
-│   └── improved_config.yaml       # Improved architecture config
-├── data/
-│   └── dataloader.py              # CIFAR-10 loading and preprocessing
-├── models/
-│   ├── generator.py               # Generator architecture
-│   ├── discriminator.py           # Discriminator architecture
-│   └── cgan.py                    # cGAN wrapper and weight init
-├── training/
-│   ├── train.py                   # Training script with CLI
-│   └── losses.py                  # Loss functions
-├── evaluation/
-│   ├── evaluate.py                # Evaluation and metrics
-│   └── visualize.py               # Plotting and visualization
-├── checkpoints/                   # Saved model checkpoints
-└── results/                       # Generated images, plots, logs
-```
+> **Note:** To install the GPU version of PyTorch, use:
+> ```bash
+> pip install --force-reinstall torch torchvision --index-url https://download.pytorch.org/whl/cu126
+> ```
 
 ## Training
 
