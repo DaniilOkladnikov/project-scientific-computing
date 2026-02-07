@@ -18,9 +18,6 @@ data/cifar10/
 # Checkpoints
 checkpoints/*.pt
 
-# Results
-results/
-
 # IDE
 .vscode/
 .idea/
