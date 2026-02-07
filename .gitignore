@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Data
+data/cifar10/
+
+# Checkpoints
+checkpoints/*.pt
+
+# Results
+results/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+nul
+Thumbs.db
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
